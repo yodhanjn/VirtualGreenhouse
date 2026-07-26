@@ -134,6 +134,3 @@ After running `npm run seed`, you can instantly log in with these test accounts:
 | `PUT` | `/api/orders/:id/status` | Seller | Update order status (`Pending` ➔ `Delivered`) |
 
 ---
-
-## 📄 License
-Distributed under the MIT License. See `LICENSE` for more information.
