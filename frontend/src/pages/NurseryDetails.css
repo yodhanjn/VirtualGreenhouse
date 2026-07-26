@@ -1,0 +1,105 @@
+.nursery-details-wrapper {
+  padding-top: 28px;
+  padding-bottom: 60px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.back-link:hover {
+  color: var(--primary);
+}
+
+.nursery-header-banner {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.nursery-banner-image-box {
+  height: 280px;
+  width: 100%;
+  background-color: var(--bg-secondary);
+}
+
+.nursery-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nursery-header-info {
+  padding: 32px;
+}
+
+.nursery-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.nursery-title-row h1 {
+  font-size: 2rem;
+}
+
+.nursery-full-desc {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.nursery-contacts-grid {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
+}
+
+.contact-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  background-color: var(--bg-primary);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-light);
+}
+
+.nursery-catalog-section {
+  margin-top: 40px;
+}
+
+.section-title-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.section-title-group h2 {
+  font-size: 1.5rem;
+}
+
+.count-pill {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
