@@ -130,6 +130,26 @@ router.put('/:id/status', auth('shop'), async (req, res) => {
             return res.status(403).json({ message: 'Not authorized to update status for this order' });
         }
 
+        // Terminal state checks: Cancelled and Delivered orders cannot be changed
+        if (order.status === 'Cancelled') {
+            return res.status(400).json({ message: 'This order is cancelled and its status cannot be modified.' });
+        }
+
+        if (order.status === 'Delivered') {
+            return res.status(400).json({ message: 'This order has been delivered and its status cannot be modified.' });
+        }
+
+        // If seller cancels the order, restore stock
+        if (status === 'Cancelled' && order.status !== 'Cancelled') {
+            for (const item of order.items) {
+                if (item.plant) {
+                    await Plant.findByIdAndUpdate(item.plant, {
+                        $inc: { stockQuantity: item.quantity }
+                    });
+                }
+            }
+        }
+
         order.status = status;
         await order.save();
 

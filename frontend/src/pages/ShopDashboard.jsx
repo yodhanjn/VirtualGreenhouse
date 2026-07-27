@@ -340,17 +340,23 @@ const ShopDashboard = () => {
                                         </div>
 
                                         <div className="status-selector-wrapper">
-                                            <select
-                                                value={order.status}
-                                                onChange={(e) => handleOrderStatusChange(order._id, e.target.value)}
-                                                className={`status-select status-${order.status.toLowerCase()}`}
-                                            >
-                                                <option value="Pending">Pending</option>
-                                                <option value="Confirmed">Confirmed</option>
-                                                <option value="Shipped">Shipped</option>
-                                                <option value="Delivered">Delivered</option>
-                                                <option value="Cancelled">Cancelled</option>
-                                            </select>
+                                            {order.status === 'Cancelled' || order.status === 'Delivered' ? (
+                                                <span className={`status-select status-${order.status.toLowerCase()}`} style={{ display: 'inline-block', cursor: 'not-allowed', opacity: 0.9 }}>
+                                                    {order.status} (Locked)
+                                                </span>
+                                            ) : (
+                                                <select
+                                                    value={order.status}
+                                                    onChange={(e) => handleOrderStatusChange(order._id, e.target.value)}
+                                                    className={`status-select status-${order.status.toLowerCase()}`}
+                                                >
+                                                    <option value="Pending">Pending</option>
+                                                    <option value="Confirmed">Confirmed</option>
+                                                    <option value="Shipped">Shipped</option>
+                                                    <option value="Delivered">Delivered</option>
+                                                    <option value="Cancelled">Cancelled</option>
+                                                </select>
+                                            )}
                                         </div>
                                     </div>
 
