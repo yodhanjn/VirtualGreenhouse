@@ -49,7 +49,7 @@ async function seed() {
             virtualTourPath: '/Virtual/The_Nurserymen_Cooperative_Society_Ltd/app-files/index.html'
         });
 
-        // Seed Plants with 3D models and images
+        // Seed Plants with 3D models and distinct species images
         const plantsData = [
             // Plants for Nandanam Nursery
             {
@@ -59,7 +59,7 @@ async function seed() {
                 price: 1299,
                 inStock: true,
                 stockQuantity: 15,
-                image: 'https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=800&q=80',
+                image: 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80',
                 model3dHtml: '/Plant3D/croton.html',
                 model3dGlb: '/Plant3D/croton_plant.glb',
                 isFeatured: true,
@@ -72,7 +72,7 @@ async function seed() {
                 price: 799,
                 inStock: true,
                 stockQuantity: 20,
-                image: 'https://images.unsplash.com/photo-1584735203820-146e55388992?auto=format&fit=crop&w=800&q=80',
+                image: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80',
                 model3dHtml: '/Plant3D/golden_pothos.html',
                 model3dGlb: '/Plant3D/golden_pothos.glb',
                 isFeatured: true,
@@ -85,7 +85,7 @@ async function seed() {
                 price: 999,
                 inStock: true,
                 stockQuantity: 12,
-                image: 'https://images.unsplash.com/photo-1533050487297-8874e25fe1c9?auto=format&fit=crop&w=800&q=80',
+                image: 'https://images.unsplash.com/photo-1550950158-d0d960dff51b?auto=format&fit=crop&w=800&q=80',
                 model3dHtml: '/Plant3D/hibiscus.html',
                 model3dGlb: '/Plant3D/hibiscus.glb',
                 isFeatured: false,
@@ -98,7 +98,7 @@ async function seed() {
                 price: 699,
                 inStock: true,
                 stockQuantity: 18,
-                image: 'https://images.unsplash.com/photo-1593482892290-ab6102470bac?auto=format&fit=crop&w=800&q=80',
+                image: 'https://images.unsplash.com/photo-1593691509543-c55fb32e7355?auto=format&fit=crop&w=800&q=80',
                 model3dHtml: '',
                 model3dGlb: '',
                 isFeatured: true,
@@ -111,7 +111,7 @@ async function seed() {
                 price: 1499,
                 inStock: true,
                 stockQuantity: 8,
-                image: 'https://images.unsplash.com/photo-1593481414518-4b9dbb318b18?auto=format&fit=crop&w=800&q=80',
+                image: 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80',
                 model3dHtml: '/Plant3D/rubber.html',
                 model3dGlb: '/Plant3D/rubber_plant.glb',
                 isFeatured: true,
@@ -139,7 +139,7 @@ async function seed() {
                 price: 1099,
                 inStock: true,
                 stockQuantity: 14,
-                image: 'https://images.unsplash.com/photo-1593697909683-bccb1b9e68a1?auto=format&fit=crop&w=800&q=80',
+                image: 'https://images.unsplash.com/photo-1632207691143-643e2a9a9361?auto=format&fit=crop&w=800&q=80',
                 model3dHtml: '',
                 model3dGlb: '',
                 isFeatured: true,
@@ -152,7 +152,7 @@ async function seed() {
                 price: 499,
                 inStock: true,
                 stockQuantity: 30,
-                image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+                image: 'https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80',
                 model3dHtml: '',
                 model3dGlb: '',
                 isFeatured: false,
@@ -165,7 +165,7 @@ async function seed() {
                 price: 699,
                 inStock: true,
                 stockQuantity: 16,
-                image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80',
+                image: 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80',
                 model3dHtml: '',
                 model3dGlb: '',
                 isFeatured: false,

@@ -38,17 +38,31 @@ const PlantCard = ({ plant }) => {
 
     const has3dModel = Boolean(plant.model3dGlb || plant.model3dHtml);
 
+    const CATEGORY_FALLBACK_IMAGES = {
+        'Foliage': 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80',
+        'Indoor & Air-Purifying': 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80',
+        'Flowering': 'https://images.unsplash.com/photo-1550950158-d0d960dff51b?auto=format&fit=crop&w=800&q=80',
+        'Indoor': 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80',
+        'Succulent': 'https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80',
+        'Outdoor': 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+        'Herb': 'https://images.unsplash.com/photo-1515586000433-45406d8e6662?auto=format&fit=crop&w=800&q=80'
+    };
+
+    const getFallbackImage = () => {
+        return CATEGORY_FALLBACK_IMAGES[plant.category] || 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80';
+    };
+
     return (
         <>
             <div className="card plant-card animate-fade-in">
                 <div className="plant-image-container">
                     <img
-                        src={plant.image.startsWith('http') ? plant.image : plant.image}
+                        src={plant.image}
                         alt={plant.name}
                         className="plant-image"
                         loading="lazy"
                         onError={(e) => {
-                            e.target.src = 'https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=800&q=80';
+                            e.target.src = getFallbackImage();
                         }}
                     />
                     <div className="plant-badges">
