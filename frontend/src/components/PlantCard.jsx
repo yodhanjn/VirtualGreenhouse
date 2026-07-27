@@ -40,11 +40,11 @@ const PlantCard = ({ plant }) => {
 
     const PLANT_NAME_IMAGES = {
         'Croton Variegatum': 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80',
-        'Golden Pothos': 'https://images.unsplash.com/photo-1597055181300-e3633a207519?auto=format&fit=crop&w=800&q=80',
-        'Hibiscus Rosa-Sinensis': 'https://images.unsplash.com/photo-1551893478-d726eaf0442c?auto=format&fit=crop&w=800&q=80',
-        'Peace Lily': 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80',
+        'Golden Pothos': 'https://nouveauraw.com/wp-content/uploads/2020/01/Pothos-Golden-Pothos-plant-800-great-coloring.png',
+        'Hibiscus Rosa-Sinensis': 'https://www.urvann.com/s/6176774ef575bbd2b3331c8a/6a16def3e17a07c304f2b87e/6a16def3e17a07c304f2b87e-480x480.png',
+        'Peace Lily': 'https://www.newnessplant.com/uploads/8545b3278143e94c23ae9269d3f836ae.jpg',
         'Rubber Plant (Ficus Elastica)': 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80',
-        'Rose Bush Bloom': 'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=800&q=80',
+        'Rose Bush Bloom': 'https://www.bloomandwild.com/cdn-cgi/image/width=1000,height=1000,fit=cover,format=auto,quality=75/https://assets-0.bloomandwild.com/addon-carousel/marble-rose-ht/ce89f0e0-0cef-4b4a-9313-4a6abfa1ff21.jpeg',
         'ZZ Plant (Zamioculcas)': 'https://images.unsplash.com/photo-1632207691143-643e2a9a9361?auto=format&fit=crop&w=800&q=80',
         'Aloe Vera Medicinal': 'https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80',
         'Jade Plant (Crassula Ovata)': 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80'
@@ -52,11 +52,11 @@ const PlantCard = ({ plant }) => {
 
     const CATEGORY_FALLBACK_IMAGES = {
         'Foliage': 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80',
-        'Indoor & Air-Purifying': 'https://images.unsplash.com/photo-1597055181300-e3633a207519?auto=format&fit=crop&w=800&q=80',
-        'Flowering': 'https://images.unsplash.com/photo-1551893478-d726eaf0442c?auto=format&fit=crop&w=800&q=80',
+        'Indoor & Air-Purifying': 'https://nouveauraw.com/wp-content/uploads/2020/01/Pothos-Golden-Pothos-plant-800-great-coloring.png',
+        'Flowering': 'https://www.urvann.com/s/6176774ef575bbd2b3331c8a/6a16def3e17a07c304f2b87e/6a16def3e17a07c304f2b87e-480x480.png',
         'Indoor': 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80',
         'Succulent': 'https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80',
-        'Outdoor': 'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=800&q=80',
+        'Outdoor': 'https://www.bloomandwild.com/cdn-cgi/image/width=1000,height=1000,fit=cover,format=auto,quality=75/https://assets-0.bloomandwild.com/addon-carousel/marble-rose-ht/ce89f0e0-0cef-4b4a-9313-4a6abfa1ff21.jpeg',
         'Herb': 'https://images.unsplash.com/photo-1515586000433-45406d8e6662?auto=format&fit=crop&w=800&q=80'
     };
 
