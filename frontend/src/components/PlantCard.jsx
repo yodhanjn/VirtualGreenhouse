@@ -38,18 +38,30 @@ const PlantCard = ({ plant }) => {
 
     const has3dModel = Boolean(plant.model3dGlb || plant.model3dHtml);
 
+    const PLANT_NAME_IMAGES = {
+        'Croton Variegatum': 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80',
+        'Golden Pothos': 'https://images.unsplash.com/photo-1597055181300-e3633a207519?auto=format&fit=crop&w=800&q=80',
+        'Hibiscus Rosa-Sinensis': 'https://images.unsplash.com/photo-1551893478-d726eaf0442c?auto=format&fit=crop&w=800&q=80',
+        'Peace Lily': 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80',
+        'Rubber Plant (Ficus Elastica)': 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80',
+        'Rose Bush Bloom': 'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=800&q=80',
+        'ZZ Plant (Zamioculcas)': 'https://images.unsplash.com/photo-1632207691143-643e2a9a9361?auto=format&fit=crop&w=800&q=80',
+        'Aloe Vera Medicinal': 'https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80',
+        'Jade Plant (Crassula Ovata)': 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80'
+    };
+
     const CATEGORY_FALLBACK_IMAGES = {
         'Foliage': 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80',
-        'Indoor & Air-Purifying': 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80',
-        'Flowering': 'https://images.unsplash.com/photo-1550950158-d0d960dff51b?auto=format&fit=crop&w=800&q=80',
+        'Indoor & Air-Purifying': 'https://images.unsplash.com/photo-1597055181300-e3633a207519?auto=format&fit=crop&w=800&q=80',
+        'Flowering': 'https://images.unsplash.com/photo-1551893478-d726eaf0442c?auto=format&fit=crop&w=800&q=80',
         'Indoor': 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80',
         'Succulent': 'https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=800&q=80',
-        'Outdoor': 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+        'Outdoor': 'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=800&q=80',
         'Herb': 'https://images.unsplash.com/photo-1515586000433-45406d8e6662?auto=format&fit=crop&w=800&q=80'
     };
 
     const getFallbackImage = () => {
-        return CATEGORY_FALLBACK_IMAGES[plant.category] || 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80';
+        return PLANT_NAME_IMAGES[plant.name] || CATEGORY_FALLBACK_IMAGES[plant.category] || 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=800&q=80';
     };
 
     return (
